@@ -1,0 +1,50 @@
+table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 400px;
+  }
+
+.tdImg {
+  vertical-align: top;
+  text-align: center;
+}
+
+.tdAlign {
+  vertical-align: top;
+  text-align: left;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.gris {
+  background-color: #f2f2f2;
+
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 100%;
+}
+

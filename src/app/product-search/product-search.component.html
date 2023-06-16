@@ -1,0 +1,15 @@
+<div class="yellow-bg">
+<form (ngSubmit)="searchProducts()">
+    <div class="input-group">
+      <img src="https://http2.mlstatic.com/frontend-assets/ml-web-navigation/ui-navigation/5.22.8/mercadolibre/logo__large_plus.png" alt="logo">
+      <input class="form-control" type="text" [(ngModel)]="searchTerm" name="searchTerm" placeholder="Nunca dejes de buscar">
+      <div class="input-group-append">
+        <button class="btn btn-light" type="submit">
+          <i class="bi bi-search"></i> <!-- Icono de búsqueda -->
+        </button>
+      </div>
+    </div>    
+  </form>
+</div>
+
+  

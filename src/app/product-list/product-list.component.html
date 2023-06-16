@@ -1,0 +1,32 @@
+<div class="gris centrado">
+  <div class="container">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <ng-container *ngFor="let categorie of products.categories">
+      <li class="breadcrumb-item">
+        <a [routerLink]="['/items']" [queryParams]="{ q: categorie }">{{ categorie }}</a>
+      </li>
+    </ng-container>
+  </ol>
+</nav>
+
+
+
+  <table>
+    <tbody>
+      <tr *ngFor="let product of products.items">
+        <td colspan="3" class="tdImg"><a (click)="onItemClick(product.id, product.categorias)"><img [src]="product.picture" alt="Imagen del producto"></a></td>
+        <td class="tdAlign"><span class="precio">{{ product.price.currency }} ${{ addSeparator(product.price.amount) }}</span> <br>
+          <span >{{ product.title }} </span></td>
+        <td>{{ product.condition }}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
+
+
+
+
